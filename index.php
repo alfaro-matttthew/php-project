@@ -1,19 +1,27 @@
 <?php 
 
-// $radius = 25;
-// $pi = 3.14;
+$peopleOne = ['shaun', 'crystal', 'ryu'];
 
-// $radius;
+// echo $peopleOne[0];
 
-// echo $radius;
+// $peopleTwo = array('ken', 'chun-li',);
 
-$age = 20;
+// echo $peopleTwo[1];
 
-// $age -= 10;
+// $ages = [20, 30, 40, 50];
 
-$age *= 2;
+// print_r($ages);
 
-echo $age;
+$ninjasOne = ['shaun'=>'black', 'mario'=>'orange', 'luigi'=>'brown'];
+// echo $ninjasOne['mario'];
+// print_r($ninjasOne);
+
+// $ninjasTwo = array
+
+$ninjasOne['luigi'] = 'pink';
+print_r($ninjasOne);
+
+echo count($ninjasOne);
 
 ?>
 
