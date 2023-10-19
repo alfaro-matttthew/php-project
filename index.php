@@ -1,20 +1,19 @@
 <?php 
 
-$emailLabel = 'email: ';
-$emailData = 'test@gmail.com';
+// $radius = 25;
+// $pi = 3.14;
 
-// echo $emailLabel.$emailData;
+// $radius;
 
-// echo "Hey my email is $emailData"
+// echo $radius;
 
-// echo "the ninja screamed \"whaaa\"";
+$age = 20;
 
-// echo $emailData[0]
-echo strtoupper($emailLabel);
-echo strlen($emailData);
+// $age -= 10;
 
-echo str_replace('m', 'w', $emailData)
+$age *= 2;
 
+echo $age;
 
 ?>
 
