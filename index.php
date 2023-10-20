@@ -1,27 +1,19 @@
 <?php 
 
-$peopleOne = ['shaun', 'crystal', 'ryu'];
+$blogs = [
+    ['title'=>'mario party', 'author'=>'mario', 'content'=>'lorem', 'likes'=>30],
+    ['title'=>'mario kart cheats', 'author'=>'toad', 'content'=>'lorem', 'likes'=>25],
+    ['title'=>'zelda hidden chests', 'author'=>'link', 'content'=>'lorem', 'likes'=>50]
+];
 
-// echo $peopleOne[0];
+// print_r($blogs[1][1]);
+// print_r($blogs[1]['author']);
+echo count($blogs);
+$blogs[] = ['title'=>'castle party', 'author'=>'peach', 'content'=>'lorem', 'likes'=>100];
 
-// $peopleTwo = array('ken', 'chun-li',);
-
-// echo $peopleTwo[1];
-
-// $ages = [20, 30, 40, 50];
-
-// print_r($ages);
-
-$ninjasOne = ['shaun'=>'black', 'mario'=>'orange', 'luigi'=>'brown'];
-// echo $ninjasOne['mario'];
-// print_r($ninjasOne);
-
-// $ninjasTwo = array
-
-$ninjasOne['luigi'] = 'pink';
-print_r($ninjasOne);
-
-echo count($ninjasOne);
+// print_r($blogs);
+$popped = array_pop($blogs);
+print_r($popped);
 
 ?>
 
