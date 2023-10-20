@@ -1,10 +1,4 @@
 <?php 
-
-    // if (isset($_GET['submit'])) {
-    //     echo $_GET['email'];
-    //     echo $_GET['title'];
-    //     echo $_GET['ingredients'];
-    // }
     
     if (isset($_POST['submit'])) {
         echo $_POST['email'];
