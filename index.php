@@ -1,19 +1,41 @@
 <?php 
 
-$blogs = [
-    ['title'=>'mario party', 'author'=>'mario', 'content'=>'lorem', 'likes'=>30],
-    ['title'=>'mario kart cheats', 'author'=>'toad', 'content'=>'lorem', 'likes'=>25],
-    ['title'=>'zelda hidden chests', 'author'=>'link', 'content'=>'lorem', 'likes'=>50]
-];
+$ninjas = ['shaun', 'ryu', 'yoshi'];
 
-// print_r($blogs[1][1]);
-// print_r($blogs[1]['author']);
-echo count($blogs);
-$blogs[] = ['title'=>'castle party', 'author'=>'peach', 'content'=>'lorem', 'likes'=>100];
+// for ($i = 0; $i < count($ninjas); $i++) {
+//     echo 'My name is ' . $ninjas[$i] . '<br>';
+// }
 
-// print_r($blogs);
-$popped = array_pop($blogs);
-print_r($popped);
+// foreach($ninjas as $ninja) {
+//     echo $ninja . '<br />';
+// }
+
+$products = [
+    [
+        'name'=>'shiny star',
+        'price'=>20,
+    ],
+    [
+        'name'=>'green shell',
+        'price'=>10,
+    ],
+    [
+        'name'=>'red shell',
+        'price'=>15,
+    ],
+    [
+        'name'=>'gold coin',
+        'price'=>5,
+    ],
+    [
+        'name'=>'lightning bolt',
+        'price'=>40,
+    ],
+    [
+        'name'=>'banana skin',
+        'price'=>2,
+    ],
+]
 
 ?>
 
@@ -26,5 +48,15 @@ print_r($popped);
 </head>
 <body>
     
-</body>
+    <h1>Products</h1>
+    <ul>
+        <?php foreach($products as $product) { ?>
+
+            <h3><?php echo $product['name']; ?></h3>
+            <p>$ <?php echo $product['price']; ?></p>
+
+        <?php } ?>
+    </ul>
+
+</body> 
 </html>
